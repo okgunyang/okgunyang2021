@@ -62,10 +62,10 @@ text-align:center; line-height: 40px; position:absolute; bottom: 0; left: 0;  }
 #page4 li a.item2 { background-image:url("./img/thumnail_icon2.png"); }
 #page4 li a.item3 { background-image:url("./img/thumnail_icon3.png"); }
 
-#page5 { background:#f1f1f1; border-top:1px solid #ececec; clear:both; }
-#page5 .itemTitle { padding-top: 60px; padding-bottom: 30px; color:#333; }
-#page5 .telTxt { color:#e92a96; }
-#page5 .itemData { padding-top: 10px; padding-bottom: 15px; font-size:0.85em; } 
+#lastPage { background:#f1f1f1; border-top:1px solid #ececec; clear:both; }
+#lastPage .itemTitle { padding-top: 60px; padding-bottom: 30px; color:#333; }
+#lastPage .telTxt { color:#e92a96; }
+#lastPage .itemData { padding-top: 10px; padding-bottom: 15px; font-size:0.85em; } 
 
 
 
