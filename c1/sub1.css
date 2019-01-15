@@ -107,3 +107,18 @@ color:#fff; border-radius:10px; float:left; margin-left: 25px; margin-top: 18px;
 .data2 { background:#368d40; }
 .data3 { background:#2dba3a; }
 .data4 { background:#448cf0; }
+
+/* #page5 */
+.subTable2 { width:1200px; margin-top:30px auto; }
+.subTable2 th, .subTable2 td { line-height:4; font-size:14px;  box-sizing: border-box; 
+border-bottom:1px solid #ccc; }
+.subTable2 th { background:#28b690; color:#fff; }
+.subTable2 td { text-align:center; color:#666; }
+.subTable2 th:nth-child(2), .subTable2 td:nth-child(2) { border-left:1px solid #ccc; border-right:1px solid #ccc; }
+.subTable2 tbody tr:nth-child(2n) { background:#fff; }
+
+/* #page6 */
+.linkLst { clear:both; width: 100%; padding-bottom: 50px; height: 720px; }
+.linkLst a { display:block; text-align:center; padding-top:40px; }
+.linkTit { display:block; text-align: center; font-size:14px; line-height:3.2; color:#666; }
+.linkLst a img { border:1px solid #ccc; }
