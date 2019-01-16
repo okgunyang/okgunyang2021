@@ -3,6 +3,7 @@
 #hd { border-bottom:1px solid #ddd; }
 .hdFrame { height:140px; }
 .page { width:100%;    }
+.page { background:#f1f1f1; padding-top: 142px; margin-top: -142px; }
 
 .btn1 { display:block; width:149px; height:40px; background:rgba(255, 255, 255, 0.8); line-height:40px;  border-left:1px solid #eee; 
 color:#333; text-align: center; 

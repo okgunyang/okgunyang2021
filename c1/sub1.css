@@ -15,7 +15,8 @@ background-image:url("./img/intro_vs11.jpg");
 
 .sec12 { clear:both; width: 100%; background-image:url("./img/intro_vs12.jpg");
     background-position:center center; 
-padding:160px 0px 260px 0px; height:1200px; }
+padding:160px 0px 300px 0px; height:1200px; 
+background-size:auto 100%; }
 .sec12 .secFrm { width: 1200px; margin: 0 auto; }
 .sec12 .secFrm li { clear:both; width:100%; }
 .sec12 .secFrm .left { float:left; 
