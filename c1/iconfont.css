@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'iconfont1';
-  src: url('./font/iconfont1.eot');
-  src: url('./font/iconfont1.eot#iefix') format('embedded-opentype'),
-       url('./font/iconfont1.woff2') format('woff2'),
-       url('./font/iconfont1.woff') format('woff'),
-       url('./font/iconfont1.ttf') format('truetype'),
-       url('./font/iconfont1.svg#fontello') format('svg');
+  src: url('./font/icofont1.eot');
+  src: url('./font/icofont1.eot#iefix') format('embedded-opentype'),
+       url('./font/icofont1.woff2') format('woff2'),
+       url('./font/icofont1.woff') format('woff'),
+       url('./font/icofont1.ttf') format('truetype'),
+       url('./font/icofont1.svg#icofont1') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, [class*="icon-"]:before {
   font-family: "iconfont1";
   font-style: normal;
   font-weight: normal;
