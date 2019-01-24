@@ -1,3 +1,6 @@
+<?php
+    @session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -472,12 +475,36 @@ $(function(){
             <li>
                 <a href="index.html" class="qlogo"></a>
             </li>
+<?php 
+        if($_SESSION['userid']=="admin") {         
+?>           
+            <li>
+                <a href="#" class="hv">관리자페이지로</a>
+            </li>
+            <li>   
+                <a href="logout.php" class="hv">로그아웃</a>
+            </li>
+<?php
+         } else if(isset($_SESSION['userid'])) {
+?>                                 
+            <li>
+                <a href="logout.php" class="hv">로그아웃</a>
+            </li>
+            <li>   
+                <a href="#" class="hv">정보수정</a>
+            </li>
+<?php
+        } else {
+?>                       
             <li>
                 <a href="joinForm.html" class="hv">회원가입</a>
             </li>
             <li>   
                 <a href="loginForm.html" class="hv">로그인</a>
             </li>
+<?php
+        }
+?> 
             <li>       
                 <a href="intro.html#page5" class="hv">비급여안내</a>
             </li>
