@@ -193,7 +193,18 @@
     .ft_logo { float:right; width: 121px; height: 32px; 
         background-image:url("./img/img-seoul.png"); }    
     </style>
-    <script></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    $(document).ready(function(){
+        var intv = setInterval(function(){ nextAni(); }, 2900);
+        function nextAni() {
+            $(".img_box").not(":animated").animate({"margin-top":"-650px"}, 900, function(){
+                $(".img_box li").eq(0).appendTo($(".img_box"));
+                $(".img_box").css("margin-top","0px");
+            });
+        }
+    });    
+    </script>
 </head>
 <body>
 <header class="hd">
