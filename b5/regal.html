@@ -36,43 +36,17 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="sub1.css">
     <style>
-    hr { clear:both; }
-    .page { min-height:60vh; clear:both; position:relative; }  
-    .page:after { content:""; clear:both; display:table; }
-    .page_wrap { width: 1020px;  margin:0 auto; position:relative; clear:both; } 
+    .page { min-height:auto; height:auto; }    
     .none_item { display:none; }
-    .page_tit { clear:both; position: relative;    background: rgba(255,255,255,0);    font-size: 52px;    line-height: 66px;
-    font-weight: 300;    text-transform: capitalize; padding-top:2rem; text-indent:-2rem; }
-    .page_com { clear:both; font-weight:300; padding: 0; line-height: 1.3; text-align:center; font-size:16px; padding-top: 0.8rem; }
-
-    .bread { clear:both; float:right; padding-top:20px;  font-size:16px; }
+    .page_tit { clear:both; font-weight: 300;    line-height: 1.6;    text-align: center;   font-size:40px; border-top:2px solid #333; width: 1020px; margin:40px auto; padding-top:25px;  }
+    .page_com { clear:both; font-weight:300; line-height: 1.3; text-align:center; font-size:16px; padding-top: 0.8rem; }
+    .page_wrap { height: auto; }
+    .bread { clear:both; float:right; padding-top: 40px;  font-size:16px; padding-bottom: 50px; }
     .bread a, .bread span { display:block; line-height:2; padding: 1.5rem 1rem; float:left; color:#333; }
-    .bread span.split { display:block;  width: 15px; padding-left: 1rem; float:left; } 
-    .bread .select_lst { display:block; float:left; width:230px;  padding: 1.9rem 1rem; position:relative; cursor:pointer; 
-        box-sizing:border-box; transition:0.7s; }
-    .bread .select_fr { position:absolute; top:30px; left:1rem; transition:0.7s; }    
-    .bread .select_lst:after { content:"▼"; position:absolute; right:5px; top:1.6rem; }
-   /* .bread .select_lst.on { height: 240px;  }*/
-    .bread .select_lst.on:after { content:"▲"; }
-    .bread .select_lst .select_fr { height:40px; transition:0.7s; overflow:hidden; }
-    .bread .select_lst.on .select_fr { height: 240px; }
-    .bread .select_lst dt, .bread .select_lst dd { height:40px; line-height:20px; padding:0; padding-left:1.5rem; margin: 0; display:block; clear:both; }
-    .bread .select_lst dd { background-color:#fff; line-height: 40px; height: 40px;  margin-left:1rem; }
-    .bread .select_lst dd a { display:block; clear:both; margin: 0; padding: 0;  }
+    .bread a:after { content:">"; padding-left: 1rem; } 
 
-    #page1 { background-image:url("./pro/category1_fo.jpg"); padding-top: 100px; box-sizing:border-box; min-height:30vh; height: 60vh;
-    overflow:visible; }
-    #page2 { padding-bottom:5rem;  }
-    #page2 .page_wrap { margin-top: -100px; }
-
-    .box_inner { position:relative;  width:1040px; min-height:500px; clear:both;  }
-    .thumb_lst { clear:both; width: 1040px; padding-top: 40px;  }
-    .thumb_lst li { float: left;    width: calc((100% - 48px) / 3);    margin: 0 0 24px 24px;    text-align: center;    background: #FFF; min-height: 400px; }
-    .thumb_lst li:nth-child(3n+1) { margin-left: 0;  }
-    .thumb_lst li a { display:block;     height: 454px;    border: 1px solid #ededed; background-color:#fff; box-shadow:0px 0px 25px #ccc; }
-    .thumb_lst li img { display:block; max-width:100%; }
-    .item_name { display: block;    font-size: 20px;    font-weight: 350;    line-height: 30px;    color: #000; }
-    .desc { padding: 8px 32px 32px;    color: #555;    font-size: 14px;    font-weight: 350;    word-break: keep-all; }
+    .con_lst { clear:both; width: 1020px; margin:40px auto; border-top:2px solid #333; padding-top: 40px; }
+    .con_lst p { font-size:14px; font-weight:200; line-height: 1.6; text-align:left; padding:1rem; }
     </style>
 </head>
 <body>
@@ -91,105 +65,31 @@
     <main class="page" id="page1">
         <div class="page_wrap">
             <div class="page_inner">
-                <div class="bread"><a href="index.html">Home</a><span class="split">&gt;</span><a href="about1.html">Product</a>
-                    <span class="split">&gt;</span>
-                    <div class="select_lst">
-                        <dl class="select_fr">
-                            <dt>Greentea Skin Care</dt>
-                            <dd><a href="product2_all.html">Basic Skin Care</a></dd>
-                            <dd><a href="product3_all.html">Sun Care</a></dd>
-                            <dd><a href="product4_all.html">Home Fragrance</a></dd>
-                            <dd><a href="product5_all.html">Life Fragrance</a></dd>
-                            <dd><a href="product6_all.html">Body Care</a></dd>
-                        </dl>
-                    </div>    
-                </div> 
-                <script>
-                $(".select_lst").click(function(){
-                    $(this).toggleClass("on");
-                });    
-                </script>
-                <h2 class="page_tit">Greentea Skin Care</h2>
-                <p class="page_com">피부를 위한 '착한' 스킨케어의 시작 <br>라운드어라운드 그린티 스킨케어</p>
+                <p class="bread"><a href="index.html">Home</a><span>Regal</span></p> 
+                <hr>
+                <h2 class="page_tit">법적고지</h2>
+                <p class="page_com">법적 부인 및 통지<br>
+                고객 여러분, 올리브영 온라인몰에 방문해주셔서 감사합니다.</p>
+                <div class="con_lst">
+                    <p>이 사이트를 통해 올리브영과 관련된 다양한 정보를 제공할 수 있게 됨을 매우 기쁘게 생각하며, 올리브영 온라인몰과 관련하여 방문자 여러분들께 몇 가지 법적 제한과 금지 사항을 알려 드리고자 합니다.</p>
+
+                    <p>고객님께서는 CJ올리브영 주식회사(이하 ‘당사’)가 제공하는 올리브영 사이트 內의 정보를 개인적인 용도로 사용하시거나 고객의 컴퓨터에 저장하실 수 있습니다. 고객의 개인적인 홈페이지나 문서로부터 본 서버로의 링크 등은 가능합니다.</p>
+
+                    <p>그러나 본 사이트는 당사의 독점적 소유의 정보자산입니다. 본 사이트는 당사가 통일된 이미지를 구축하고 특화된 소비자 경험을 제공하기 위하여 상당한 투자와 노력을 들여 개발한 성과 등이므로 당사의 사전 동의 없이 임의로 저장•수정•배포•제공•전송•공유•이용하는 행위 등은 저작권 침해 및 부정경쟁행위에 해당합니다. 이러한 자산들은 저작권, 상표권, 기술에 대한 정보에만 국한되지 않으며 본 사이트의 구조•체계, 제품이나 서비스에 대한 설명문구 등을 포함합니다. 당사에 소유권이 있는 정보자산들은 문자, 그림, 음성, 화상, 내려받기 파일, 링크 및 소스 코드들(이하 ‘서비스와 자료들’)의 형태로 제공됩니다.</p>
+
+                    <p>당사는 이러한 서비스와 자료들에 대한 모든 권리를 소유합니다.</p>
+
+                    <p>이러한 서비스와 자료들은 오직 당사의 고객들과 고객들의 편의를 위해서 제공 되었습니다. 당사는 본 사이트에서 고객들께 제공되는 서비스와 자료들에 대하여 고객들에게 지적인 재산권을 부여한 것은 아닙니다.</p>
+
+                    <p>당사는 이 사이트 및 다른 관련 사이트들의 서비스와 자료들 및 기타 정보들에 대한 정확도, 완성도, 신뢰도에 대하여 보장하지 않습니다. 따라서 당사는 문서로 특별히 조언을 드리는 경우를 제외하고는 이 사이트에 포함된 정보를 이익에 관련된 결정상의 참고자료로 의존하지 마시기 바랍니다.</p>
+
+                    <p>서비스와 자료들은 당사에 의해 사실에 기초하여 제공되었습니다.</p>
+
+                    <p>그리고 당사는 서비스나 자료들에 대한 판매 목적상의 무제한 보증이나 특별한 목적하의 맞추어진 적합성을 포함하여 표현되거나 함축된 어떤 또는 모든 보증을 부인합니다.</p>
+
+                    <p>서비스와 자료들에 관련된 어떤 종류의 직접적, 간접적, 우발적, 징벌적 또는 필연적인 피해에 관련된 경우에 대하여 당사는 책임을 지지 않습니다.</p>
+                </div>
             </div>
-        </div>
-    </main>
-    <main class="page" id="page2">
-        <div class="page_wrap">
-            <ul class="thumb_lst">
-                <li class="item">
-                    <a href="product1.html#page1" title="그린티 미스트 토너">
-                        <div class="thumb">
-                            <img src="./pro/p_1.png" alt="그린티 미스트 토너">
-                        </div>
-                        <p class="item_name"><span>그린티 미스트 토너</span></p>
-                        <p class="desc">진짜 녹차수 미스트<br>착한 진정 미스트 토너</p>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="product1.html#page2" title="그린티 스킨 세럼">
-                        <div class="thumb">
-                            <img src="./pro/p_2.png" alt="그린티 스킨 세럼">
-                        </div>
-                        <p class="item_name"><span>그린티 스킨 세럼</span></p>
-                        <p class="desc">그린티 수분 에너지 가득<br>착한 수분 세럼</p>
-                    </a>
-                </li>
-                <li class="item ">
-                    <a href="product1.html#page3" title="그린티 릴리프 크림">
-                        <div class="thumb">
-                            <img src="./pro/p_3.png" alt="그린티 릴리프 크림">
-                        </div>
-                        <p class="item_name"><span>그린티 릴리프 크림</span></p>
-                        <p class="desc">지친 피부 산뜻 리프레쉬<br>착한 수분 진정 크림</p>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="product1.html#page4" title="그린티 수퍼 씨드 오일">
-                        <div class="thumb">
-                            <img src="./pro/p_4.png" alt="그린티 수퍼 씨드 오일">
-                        </div>
-                        <p class="item_name"><span>그린티 수퍼 씨드 오일</span></p>
-                        <p class="desc">녹차 씨앗의 에너지로<br>수분 영양 가득 그린티 오일</p>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="product1.html#page5" title="그린티 약산성 클렌징폼">
-                        <div class="thumb">
-                            <img src="./pro/p_5.png" alt="그린티 약산성 클렌징폼">
-                        &nbsp;</div>
-                        <p class="item_name"><span>그린티 약산성 클렌징폼</span></p>
-                        <p class="desc">건강한 피부 pH 케어<br>착한 그린티 약산성 클렌저</p>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="product1.html#page6" title="그린티 트러블 버블폼">
-                        <div class="thumb">
-                            <img src="./pro/p_6.png" alt="그린티 트러블 버블폼">
-                        &nbsp;</div>
-                        <p class="item_name"><span>그린티 트러블 버블폼</span></p>
-                        <p class="desc">그린티와 티트리로 촉촉하게<br>저자극 트러블 케어 클렌저</p>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="product1.html#page7" title="그린티 퓨어 클렌징 오일">
-                        <div class="thumb">
-                            <img src="./pro/p_7.png" alt="그린티 퓨어 클렌징 오일">
-                        &nbsp;</div>
-                        <p class="item_name"><span>그린티 퓨어 클렌징 오일</span></p>
-                        <p class="desc">미세먼지 깔끔 세정<br>자연유래 성분 클렌징 오일</p>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="product1.html#page8" title="그린티 약산성 립앤아이 리무버">
-                        <div class="thumb">
-                            <img src="./pro/p_8.png" alt="그린티 약산성 립앤아이 리무버">
-                        </div>
-                        <p class="item_name"><span>그린티 약산성 립앤아이 리무버</span></p>
-                        <p class="desc">눈가 수분 영양 공급<br>착한 그린티 립앤아이리무버</p>
-                    </a>
-                </li>
-            </ul>
         </div>
     </main>
     <footer class="ft">
