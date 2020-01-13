@@ -1,0 +1,17 @@
+.overlay {
+  background-image: url(../img/overlay1.png);
+  height: 100vh; }
+
+section {
+  padding: 50px 0; }
+
+.portfolio-box {
+  width: 30%;
+  height: 300px;
+  overflow: hidden;
+  background-size: cover; }
+
+.hcontainer {
+  display: inline-block; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImVsZW1lbnRzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSwyQ0FBMEM7RUFDMUMsY0FBYyxFQUNqQjs7QUFFRDtFQUNJLGdCQUFnQixFQUNuQjs7QUFFRDtFQUNJLFdBQVc7RUFDWCxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLHVCQUF1QixFQUMxQjs7QUFFRDtFQUNJLHNCQUFzQixFQUN6QiIsImZpbGUiOiJlbGVtZW50cy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIub3ZlcmxheSB7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vaW1nL292ZXJsYXkxLnBuZyk7XHJcbiAgICBoZWlnaHQ6IDEwMHZoO1xyXG59XHJcblxyXG5zZWN0aW9uIHtcclxuICAgIHBhZGRpbmc6IDUwcHggMDtcclxufVxyXG5cclxuLnBvcnRmb2xpby1ib3gge1xyXG4gICAgd2lkdGg6IDMwJTtcclxuICAgIGhlaWdodDogMzAwcHg7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxufVxyXG5cclxuLmhjb250YWluZXIge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG59XHJcbiJdfQ== */
