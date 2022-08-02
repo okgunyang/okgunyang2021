@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
-    <style>
-    * { margin: 0; padding: 0; }
-    body, html { width: 100%; -ms-overflow-style: none; }
-    /* 스크롤바 없애기 */
-    ::-webkit-scrollbar { display:none; }
-    ul { list-style: none; }
-    a { text-decoration: none; }
-    .wrap { clear:both; width: 100%; }
-    .wrap:after { content:""; clear:both; display:block; }
-    #hd { width: 100%; height: 76px; position:fixed; left: 0; top: 0; z-index:999; 
-    background-color:rgba(11,11,11,0.8); }
-    #gnb { width: 1280px; margin: 10px auto; position:relative; }
-    #gnb li { float:left; width: 25%; box-sizing: border-box; }
-    #gnb li a { display:block; text-align: center; line-height: 48px; 
-    color:#fff; font-size:18px; font-weight:bold; }
-    #gnb li.on a { color:deeppink; }
-    #gage { clear:both; width:100%; height: 8px; background-color:#eee; 
-    position:relative; overflow:hidden; }
-    #gage .gagebar { width:calc(calc(100vw - 1280px) / 2); height: 6px; 
-    margin:1px 0px; float:left; background-color:deeppink; }
+    <!-- 문서 정보 등록 -->
+    <meta name="application-name" content="kmgt Portfolio">
+    <meta name="title" content="KMGT's 포트폴리오">
+    <meta name="description" content="KMGT's의 자바웹개발자 포트폴리오, 인트로, 보유기술, 갤러리, 컨택트, intro, technic, ability, skill, project, gallery, contact">
+    <meta name="keywords" content="웹 프로젝트, web project, 자바, java, jsp, 서블릿, servlet, MVC, MVC2, java framework, spring legacy, spring boot, spring cloud, sts, IntelliJ, html, haml, Markdown, Jade, Slim, css, scss/sass, less, Stylus, 웹표준, SVG, Web Animation, 웹 애니메이션, javascript, typescript, jQuery, Ajax, 자바스크립트, 마크다운, Node, angular, Vue, React, RDBMS, 관계형 데이터베이스, oracle, mysql, mariadb, H2, Postgree, MongoDB, SQLite, SQL Workbench, SQL Developer, mybatis, JSON, 오라클, 마리아DB, Business Logic, 비즈니스로직, Controller, Servicem, DAO, DTO, VO, Mapper, IoC, AOP, JPA, CRUD, Monolothic, DevOps, Cloud Native, AWS, Kubernetes, Azure, Agile, Docker, Jenkins, Git, Github, GitLab, bitbucket, App Deploy, Build, Maven, Gradle, JAR, WAR, EAR, jUnit, PMD, Sparrow, CodeMind, Heuristic, Selenium IDE, Trello, Jira, protoNow, Ovenapp, balsamiq, UML, USECASE, Class Diagram, Sequence Diagram, Amateras, ObjectAid, Task Flow, MindMap, User Scenarios, Comstomer Journey Map">
+    <!-- 파비콘 등록 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- 오픈 그래프 등록 -->
+    <meta property="og:title" content="kmgt Portfolio">
+    <meta property="og:url" content="https://okgunyang.github.io">
+    <meta property="og:description" content="KMGT's의 자바웹개발자 포트폴리오, 인트로, 보유기술, 갤러리, 컨택트, intro, technic, ability, skill, project, gallery, contact">
+    <meta property="og:image" content="portfolio_home.png">
+    <meta name="twitter:card" content="portfolio_card.mp4" /> 
+    <meta name="twitter:title" content="kmgt Portfolio" /> 
+    <meta name="twitter:description" content="KMGT's의 자바웹개발자 포트폴리오, 인트로, 보유기술, 갤러리, 컨택트, intro, technic, ability, skill, project, gallery, contact" /> 
+    <meta name="twitter:image" content="portfolio_home.png" /> 
+    <!-- 모바일 앱 연결시 오픈 그래프 -->
+    <!--iOS-->
+    <meta property="al:ios:url" content=" ios 앱 URL" />
+    <meta property="al:ios:app_store_id" content="ios 앱스토어 ID" /> 
+    <meta property="al:ios:app_name" content="ios 앱 이름" /> 
+    <!--Android-->
+    <meta property="al:android:url" content="안드로이드 앱 URL" />
+    <meta property="al:android:app_name" content="안드로이드 앱 이름" />
+    <meta property="al:android:package" content="안드로이드 패키지 이름" /> 
+    <meta property="al:web:url" content="안드로이드 앱 URL" />
 
-    .page { clear:both; width: 100%; min-height:80vh; border-bottom:3px solid #f9eff5;}
-    .page:after { content:""; display:block; clear:both; }
-
-
-    #ft { clear:both; width: 100%; min-height:80px; 
-    background-color:rgba(11,11,11,1);
-    color:#fff; }
-    .ft_wrap { text-align: center; width: 1280px; margin: 0 auto; line-height: 80px; }
-    </style>
+    <!-- 필요 폰트 가져오기 -->
+    <link rel="stylesheet" href="fonts.css">
+    <title>KMGT's 포트폴리오</title>
+    <link rel="stylesheet" href="common.css">
     <style>
     .page_tit { text-align: center; padding-top: 3em; line-height: 2.4; font-size:36px; }    
     .sec_wrap { clear:both; width: 1280px; margin: 0 auto; }
@@ -107,7 +109,6 @@ stroke-dashoffset: 440; stroke: white; stroke-linecap: round; transform:translat
     .ability_lst li.item3 a { background-image: url("html5+css3.png"); }
     .ability_lst li.item4 a { background-image: url("js+jquery.png"); }
     .ability_lst li.item5 a { background-image: url("oracle.png"); background-size: 50%; border-radius:50%; overflow:hidden; }
-
 
     #contact_area, #map_area { clear:both; width: 1280px; min-height:300px; margin: 5px auto;     }
     #map_area { background-color:rgba(11,11,11,0.1); }
@@ -356,7 +357,7 @@ border-radius:25px; cursor:pointer; }
         </section>
     </main>
     <footer id="ft">
-        <div class="ft_wrap">카피라이트 또는 주의사항, 당부사항</div>
+        <div class="ft_wrap">Copyright 2022. Kmgt inc. All rights reserved.</div>
     </footer>
 </div>
 <div id="quick" class="quick">
